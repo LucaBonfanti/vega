@@ -8,6 +8,7 @@ using vega.Controllers.Resources;
 using vega.Core.Models;
 using vega.Core;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 namespace vega.Controllers
 {
@@ -69,7 +70,8 @@ namespace vega.Controllers
     }
 
     [HttpDelete("{id}")]
-    [Authorize]
+    /* [Authorize] */
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public async Task<IActionResult> DeleteVehicle(int id)
     {
       var vehicle = await repository.GetVehicle(id, includeRelated: false);

@@ -21,6 +21,7 @@ export class VehicleService {
   }
 
   create(vehicle) {
+    // return this.authHttp.post(this.vehiclesEndpoint, vehicle)        TODO: implement auth 
     return this.authHttp.post(this.vehiclesEndpoint, vehicle)
       .map(res => res.json());
   }
@@ -47,12 +48,14 @@ export class VehicleService {
   }
 
   update(vehicle: SaveVehicle) {
+    // return this.authHttp.put(this.vehiclesEndpoint + '/' + vehicle.id, vehicle)   TODO: implement auth 
     return this.authHttp.put(this.vehiclesEndpoint + '/' + vehicle.id, vehicle)
       .map(res => res.json());
   }
 
   delete(id) {
-    return this.authHttp.delete(this.vehiclesEndpoint + '/' + id)
+    // return this.authHttp.delete(this.vehiclesEndpoint + '/' + id)                   TODO: implement auth 
+    return this.authHttp.delete(this.vehiclesEndpoint + '/' + id)            
       .map(res => res.json());
   }
 }

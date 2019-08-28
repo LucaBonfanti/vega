@@ -11,7 +11,7 @@ export class AuthGuard implements CanActivate {
     if (this.auth.authenticated())
       return true;
 
-    window.location.href = 'https://vegaproject.auth0.com/login?client=RfRu3un13aOO73C7X2mH41qxfHRbUc33';
+    window.location.href = 'https://ellebi.eu.auth0.com/login?client=3G4y5CLAgerL9pmoUOxKjBaaCGKryKPj';
     return false;
   }
 }

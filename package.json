@@ -21,7 +21,8 @@
     "angular2-universal-polyfills": "^2.1.0-rc.1",
     "aspnet-prerendering": "^2.0.0",
     "aspnet-webpack": "^1.0.17",
-    "auth0-lock": "^10.15.0",
+    "auth0-js": "^9.11.0",
+    "auth0-lock": "^11.15.0",
     "awesome-typescript-loader": "^3.0.0",
     "bootstrap": "^3.3.7",
     "chart.js": "^2.5.0",
@@ -44,16 +45,16 @@
     "rxjs": "^5.3.0",
     "style-loader": "^0.13.1",
     "to-string-loader": "^1.1.5",
-    "typescript": "^2.2.1",
-    "underscore": "^1.8.3",
+    "typescript": "^3.5.0",
+    "underscore": "^1.9.1",
     "url-loader": "^0.5.7",
-    "webpack": "^2.2.0",
+    "webpack": "^3.2.0",
     "webpack-hot-middleware": "^2.12.2",
     "webpack-merge": "^0.14.1",
     "zone.js": "^0.7.8"
   },
   "devDependencies": {
     "@angular/cli": "^1.0.0-rc.4",
-    "webpack": "^2.6.0"
+    "webpack": "^3.11.0"
   }
 }

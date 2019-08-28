@@ -29,6 +29,7 @@ module.exports = (env) => {
                 'angular2-universal',
                 'angular2-universal-polyfills',
                 'auth0-lock',
+                'auth0-js',
                 'bootstrap',
                 'bootstrap/dist/css/bootstrap.css',
                 'chart.js',

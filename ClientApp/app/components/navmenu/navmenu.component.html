@@ -13,7 +13,9 @@
         <div class='navbar-collapse collapse'>
             <ul class='nav navbar-nav'>
                 <li [routerLinkActive]="['link-active']">
-                    <a href="https://vegaproject.auth0.com/login?client=RfRu3un13aOO73C7X2mH41qxfHRbUc33" *ngIf="!auth.authenticated()">
+                    <!-- <a href="https://vegaproject.auth0.com/login?client=RfRu3un13aOO73C7X2mH41qxfHRbUc33" *ngIf="!auth.authenticated()"> -->
+                    <!-- <a href="https://ellebi.eu.auth0.com/login?client=3G4y5CLAgerL9pmoUOxKjBaaCGKryKPj" *ngIf="!auth.authenticated()"> -->
+                    <a (click)="auth.login()" *ngIf="!auth.authenticated()">
                         <span class='glyphicon glyphicon-user'></span> Login
                     </a>
                     <a (click)="auth.logout()" *ngIf="auth.authenticated()">
